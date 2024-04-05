@@ -80,6 +80,5 @@ def Dmap(file_name,P,test_only = False):
     # Error - Rhe distant between true value and incorrect value
     # React - Full election
 
-# This acived 89.95 %  with total 6887 records
 Dmap('Data/Indexed_mnist_train.csv',P)
 Dmap('Data/Indexed_mnist_test.csv',P,True)
