@@ -70,7 +70,7 @@ def map(file_name,P,test_only = False):
             f'{error_type} Error { float("{:.4f}".format(error[len(error)-1])) } \033[0m'
             + React)
     
-    # T - Data we now at
+    # T - Data Corrently at
     # P - Total records
     # C - Correct ones thus far
     # Ic - Incorrect ones thus far
@@ -78,13 +78,8 @@ def map(file_name,P,test_only = False):
     # Max - Record votted higest value
     # AR - Avarage Error
     # Error - Rhe distant between true value and incorrect value
-    # React - Rull election
-  
-# Resalts 12 649 total records , accuracy is 90.25 %   
-# map('Indexed_mnist_train.csv',P)
-# map('Indexed_mnist_train.csv',P)
-# map('data/Indexed_mnist_test.csv',P,True)
+    # React - Full election
 
 # This acived 89.95 %  with total 6887 records
-map('data/Indexed_mnist_train.csv',P)
-map('data/Indexed_mnist_test.csv',P,True)
+map('Data/Indexed_mnist_train.csv',P)
+map('Data/Indexed_mnist_test.csv',P,True)
