@@ -10,7 +10,7 @@ def J(A,B):C = len(A & B);return C / (len(A) + len(B) - C)
 
 P = [Point(set(),set({'0','1','2','3','4','5','6','7','8','9'}),1)]
 
-def map(file_name,P,test_only = False):
+def Dmap(file_name,P,test_only = False):
     tf = open(file_name)
     testfile = csv.reader(tf)
     correct = 0
@@ -81,5 +81,5 @@ def map(file_name,P,test_only = False):
     # React - Full election
 
 # This acived 89.95 %  with total 6887 records
-map('Data/Indexed_mnist_train.csv',P)
-map('Data/Indexed_mnist_test.csv',P,True)
+Dmap('Data/Indexed_mnist_train.csv',P)
+Dmap('Data/Indexed_mnist_test.csv',P,True)
